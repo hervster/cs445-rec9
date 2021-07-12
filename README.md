@@ -28,22 +28,22 @@ Recall that the List ADT:
 2. Implement the following methods in `LinkedList.java` to complete the singly LinkedList implementation. 
 
       /**
-      \* Adds a new entry to the end of this list.
-      \* Entries currently in the list are unaffected. The list's size is
-      \* increased by 1.
-      \* @param newEntry  The object to be added as a new entry.
+            * Adds a new entry to the end of this list.
+            * Entries currently in the list are unaffected. The list's size is
+            * increased by 1.
+            * @param newEntry  The object to be added as a new entry.
       */
       public void add(E newEntry)
 
       /**
-      \* Adds a new entry at a specified position within this list.
-      \* Entries originally at and above the specified position are at the next
-      \* higher position within the list. The list's size is increased by 1.
-      \* @param newPosition  An integer that specifies the desired position of the
-      \* new entry.
-      \* @param newEntry  The object to be added as a new entry.
-      \* @throws  IndexOutOfBoundsException if newPosition < 0 or
-      \* newPosition > getSize().
+            * Adds a new entry at a specified position within this list.
+            * Entries originally at and above the specified position are at the next
+            * higher position within the list. The list's size is increased by 1.
+            * @param newPosition  An integer that specifies the desired position of the
+            * new entry.
+            * @param newEntry  The object to be added as a new entry.
+            * @throws  IndexOutOfBoundsException if newPosition < 0 or
+            * newPosition > getSize().
       */
       public void add(int newPosition, E newEntry)
 
@@ -54,15 +54,15 @@ Recall that the List ADT:
 5. Implement the following method in `DoublyLinkedList.java` to complete the doubly LinkedList implementation.
 
       /**
-      \* Removes the entry at a given position from this list.
-      \* Entries originally at positions higher than the given position are at the
-      \* next lower position within the list, and the list's size is decreased by
-      \* 1.
-      \* @param position  An integer that indicates the position of the entry to
-      \* be removed.
-      \* @return  A reference to the removed entry.
-      \* @throws  IndexOutOfBoundsException if position < 0 or
-      \* position >= getSize().
+            * Removes the entry at a given position from this list.
+            * Entries originally at positions higher than the given position are at the
+            * next lower position within the list, and the list's size is decreased by
+            * 1.
+            * @param position  An integer that indicates the position of the entry to
+            * be removed.
+            * @return  A reference to the removed entry.
+            * @throws  IndexOutOfBoundsException if position < 0 or
+            * position >= getSize().
       */
       public E remove(int position)
 
