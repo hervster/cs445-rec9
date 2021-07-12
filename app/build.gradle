@@ -18,7 +18,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'cs445.rec7.Queens'
+    mainClass = 'cs445.rec9.ListClient'
 }
 
 tasks.named('test') {
