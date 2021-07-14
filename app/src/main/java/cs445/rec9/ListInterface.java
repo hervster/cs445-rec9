@@ -8,6 +8,7 @@ package cs445.rec9;
  * @version 4.1
  */
 public interface ListInterface<E> {
+
     /**
      * Adds a new entry to the end of this list.
      * Entries currently in the list are unaffected. The list's size is
@@ -101,5 +102,6 @@ public interface ListInterface<E> {
      * @return  True if the list is empty, or false if not.
      */
     public boolean isEmpty();
+
 }
 
