@@ -19,6 +19,7 @@ import cs445.rec9.LinkedList;
  * @author Norhan Abbas
  */
 public class SinglyLinkedListTest {
+
     ListInterface<String> stringList;
     ListInterface<Integer> intList;
     final String[] testStrings = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
@@ -109,4 +110,6 @@ public class SinglyLinkedListTest {
         assertTrue(stringList.isEmpty(), "LinkedList should be empty");
         assertTrue(intList.isEmpty(), "LinkedList should be empty");
     }
+
 }
+

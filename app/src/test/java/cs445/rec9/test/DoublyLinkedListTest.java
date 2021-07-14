@@ -19,20 +19,21 @@ import cs445.rec9.DoublyLinkedList;
  * @author Norhan Abbas
  */
 public class DoublyLinkedListTest {
-	ListInterface<String> stringList;
-	ListInterface<Integer> intList;
-	final String[] testStrings = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+
+    ListInterface<String> stringList;
+    ListInterface<Integer> intList;
+    final String[] testStrings = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
 
     @BeforeEach
     public void setup() {
-	    stringList = new DoublyLinkedList<String>();
-	    intList = new DoublyLinkedList<Integer>();
+        stringList = new DoublyLinkedList<String>();
+        intList = new DoublyLinkedList<Integer>();
     }
 
     @AfterEach
     public void teardown() {
-	    stringList = null;
-	    intList = null;
+        stringList = null;
+        intList = null;
     }
 
     @Test
@@ -109,4 +110,6 @@ public class DoublyLinkedListTest {
         assertTrue(stringList.isEmpty(), "Doubly-LinkedList should be empty");
         assertTrue(intList.isEmpty(), "Doubly-LinkedList should be empty");
     }
+
 }
+
