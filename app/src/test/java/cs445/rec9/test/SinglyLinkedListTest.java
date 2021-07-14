@@ -8,9 +8,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import cs445.rec9.ListInterface;
 import cs445.rec9.LinkedList;
@@ -21,7 +18,7 @@ import cs445.rec9.LinkedList;
  * @author Brian T. Nixon
  * @author Norhan Abbas
  */
-public class SingleListTest {
+public class SinglyLinkedListTest {
     ListInterface<String> stringList;
     ListInterface<Integer> intList;
     final String[] testStrings = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
