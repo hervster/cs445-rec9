@@ -27,10 +27,42 @@ public class LinkedList<E> implements ListInterface<E> {
 
     public void add(E newEntry) {
         //TODO: implement this method
+        Node newNode = new Node(newEntry);
+
+        if (isEmpty()) { head = newNode;}
+        else
+        {
+            Node lastNode = getNodeAt(numberOfEntries - 1);
+            lastNode.setNextNode(newNode);
+        }
+        numberOfEntries++;
+
     }
 
     public void add(int givenPosition, E newEntry) {
         //TODO: implement this method
+        if ( (givenPosition >= 0) && (givenPosition <= numberOfEntries) )
+        {
+            Node newNode = new Node(newEntry);
+
+            if (givenPosition == 0) 
+            {
+                newNode.setNextNode(head);
+                head = newNode;
+            } else 
+            {
+                Node nodeBefore = getNodeAt(givenPosition - 1);
+                Node nodeAfter = nodeBefore.getNextNode();
+
+                newNode.setNextNode(nodeAfter);
+                nodeBefore.setNextNode(newNode);
+            }
+            numberOfEntries++;
+
+        } else 
+        {
+            throw new IndexOutOfBoundsException("Illegal position to add method"); 
+        }
     }
 
     public E remove(int givenPosition) {
